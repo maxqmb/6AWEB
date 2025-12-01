@@ -1,0 +1,43 @@
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="data-binding">Data Binding</a>
+  <a routerLink="directives">Directives</a>
+</nav>
+
+<router-outlet />
+
+<style>
+  nav {
+    background-color: #58aaf3;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    color: #ffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 15px;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 4px;
+    font-family: Georgia, serif;
+    font-weight: 650;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+  }
+
+  nav a:hover {
+    background-color: #86bdf5;
+    transform: scale(1.05);
+    color: black;
+  }
+
+  nav a.active {
+    background-color: #a9cdfb;
+    color: black;
+    font-weight: bold;
+  }
+</style>
