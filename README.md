@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ConferenceBadging
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
@@ -57,3 +58,9 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+**WD-301 PRELIM ACTIVITIES — Maxene P. Quiambao**
+
+This repository contains my Prelim Activity for WD-301, following the requirements from the Lab Activity Guide.
+The project is a simple Angular application displaying my personal CV with custom design, original content,
+>>>>>>> 91728e55a48e36fdaac4da6143d1fb9e73021a2e

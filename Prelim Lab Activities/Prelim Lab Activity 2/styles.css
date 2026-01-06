@@ -1,0 +1,142 @@
+/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+.cv-container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Lora', Georgia, serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.7;
+}
+
+h1, h2, h3, .section-title {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 700;
+}
+
+p, li, .profile-text, .tech-items {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #cc6b64, transparent);
+  margin-top: 20px;
+}
+
+/* Content Styles */
+.cv-content {
+  margin-top: 30px;
+}
+
+.profile-section,
+.skills-section,
+.technical-skills {
+  margin-bottom: 35px;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #333;
+  text-transform: uppercase;
+  border-bottom: 2px solid #cc6b64;
+}
+
+/* Profile Section */
+.profile-text {
+  font-size: 1rem;
+  color: #444;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 30px 25px;
+  }
+
+  .name {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-container {
+    padding: 20px 15px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .contact-info {
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  .profile-text,
+  .skills-list li,
+  .tech-items {
+    font-size: 0.9rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .cv-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    page-break-after: avoid;
+  }
+
+  .profile-section,
+  .skills-section,
+  .technical-skills {
+    page-break-inside: avoid;
+  }
+}
