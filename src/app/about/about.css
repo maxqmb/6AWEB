@@ -1,0 +1,71 @@
+/* HERO */
+.hero {
+  height: 100vh;
+  background-image: url('/about.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  padding: 40px;
+  color: #ffffff;
+  background: rgba(0,0,0,0.4); /* subtle overlay for text readability */
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.hero-content p {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero-btn {
+  padding: 14px 36px;
+  font-size: 1rem;
+  background-color: #f5c542;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 60px 80px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 900px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.gift-btn {
+  padding: 12px 30px;
+  background: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.gift-text {
+  font-weight: 500;
+}

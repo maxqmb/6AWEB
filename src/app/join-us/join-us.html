@@ -1,0 +1,47 @@
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Join Our Mailing List!</h1>
+    <p>Join and meet thousands of academicians around the globe and stay updated!</p>
+    <button class="hero-btn" (click)="onJoin()">Click here to JOIN!</button>
+  </div>
+</section>
+
+<!-- FORM SECTION -->
+<section class="join-form">
+  <div class="form-card">
+
+    <h2>Fill the form below:</h2>
+
+    <div class="form-container">
+
+      <!-- Left: Form Inputs -->
+      <div class="form-inputs">
+        <label>Firstname:</label>
+        <input type="text" [(ngModel)]="firstName" placeholder="Enter your firstname" />
+
+        <label>Lastname:</label>
+        <input type="text" [(ngModel)]="lastName" placeholder="Enter your lastname" />
+
+        <label>Enter Email Address:</label>
+        <input type="email" [(ngModel)]="email" placeholder="Enter your email" />
+
+        <label>Enter Institution/Affiliation:</label>
+        <input type="text" [(ngModel)]="institution" placeholder="Enter your institution" />
+
+        <label>Academic Institution:</label>
+        <input type="text" [(ngModel)]="academicInstitution" placeholder="Enter academic institution" />
+      </div>
+
+      <!-- Right: Live Output Preview -->
+      <div class="form-preview">
+        <p><strong>Firstname:</strong> {{ firstName }}</p>
+        <p><strong>Lastname:</strong> {{ lastName }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>Institution/Affiliation:</strong> {{ institution }}</p>
+        <p><strong>Academic Institution:</strong> {{ academicInstitution }}</p>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>{{ hero.title }}</h1>
+    <p>{{ hero.subtitle }}</p>
+    <button class="hero-btn">Become a Sponsor</button>
+  </div>
+</section>
+
+<!-- SPONSORS SECTION -->
+<section class="sponsors">
+  <h2>Our Sponsors</h2>
+
+  <div class="sponsor-grid">
+    <div class="sponsor-card" *ngFor="let sponsor of sponsors">
+      <img [src]="sponsor.logo" [alt]="sponsor.name">
+      <h3>{{ sponsor.trademark }}</h3>
+      <p class="sponsor-level">{{ sponsor.level }}</p>
+      <a [href]="sponsor.website" target="_blank">Go to Website</a>
+    </div>
+  </div>
+</section>

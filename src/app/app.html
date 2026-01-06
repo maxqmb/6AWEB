@@ -1,0 +1,18 @@
+<nav class="navbar">
+  <div class="logo">Conference Badging</div>
+
+  <div class="hamburger" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="navbar-links" [class.open]="menuOpen">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/partners" routerLinkActive="active">Our Partners</a>
+    <a routerLink="/about" routerLinkActive="active">About the Organization</a>
+    <a routerLink="/join-us" routerLinkActive="active">Join Us!</a>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

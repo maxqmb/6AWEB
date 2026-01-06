@@ -1,0 +1,34 @@
+<!-- ABOUT HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>{{ aboutHero.title }}</h1>
+    <p>{{ aboutHero.subtitle }}</p>
+
+    <!-- EVENT BINDING -->
+    <button class="hero-btn" (click)="onLearnMore()">
+      Learn More
+    </button>
+  </div>
+</section>
+
+<!-- ABOUT CONTENT -->
+<section class="about" id="aboutSection">
+  <h2>About</h2>
+
+  <p>
+    We believe in transparency, global cooperation, and the free exchange of
+    talent and ideas. Our conferences provide a platform for technical and
+    humanitarian discussions across the world.
+  </p>
+
+  <!-- EVENT BINDING -->
+  <button class="gift-btn" (click)="onFreeGift()">
+    Click here to get a FREE gift!
+  </button>
+
+  <!-- EVENT BINDING WITH *ngIf -->
+  <p class="gift-text" *ngIf="showGift">
+    Conferences are part of the legacy of this organization and continue today
+    to be a catalyst for creativity worldwide.
+  </p>
+</section>

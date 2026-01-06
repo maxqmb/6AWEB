@@ -1,0 +1,122 @@
+/* HERO SECTION */
+.hero {
+  height: 60vh;
+  background-image: url('/join.jpg'); /* change to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+  background: rgba(0,0,0,0.4); /* subtle overlay for text readability */
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  background-color: #f5c542;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* FORM SECTION */
+.join-form {
+  display: flex;
+  justify-content: center;
+  margin: -50px 20px 60px 20px; /* lifts form above page for modern look */
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.form-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form-inputs, .form-preview {
+  flex: 1;
+  min-width: 280px;
+}
+
+.form-inputs label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-inputs input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-inputs input:focus {
+  border-color: #f5c542;
+  box-shadow: 0 0 8px rgba(245,197,66,0.5);
+  outline: none;
+}
+
+.form-preview {
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-preview p {
+  margin: 12px 0;
+}
+
+@media (max-width: 800px) {
+  .form-container {
+    flex-direction: column;
+  }
+}
